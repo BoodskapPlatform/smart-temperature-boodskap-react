@@ -1,0 +1,13 @@
+:root {
+    --primary: #0093a5 !important;
+    --secondary: #c7f2f7 !important;
+    --red: #DC0613;
+    --underline: #FF000F;
+    --border-color: #ddd;
+    --bottom-underline: #F0F0F0;
+    --black: #000000;
+    --gray: #ddd;
+    --text-primary: #323232 !important;
+    --slot-bg:#c5d1d9;
+    --background:#eaf1f6
+  }

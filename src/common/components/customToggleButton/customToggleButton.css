@@ -1,0 +1,39 @@
+.toggle-box{
+    background: var(--primary);
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+}
+
+.toggle-first-txt{
+    position: absolute;
+    color: #ffffff99;
+    font-size: 13px;
+    top: 10px;
+    left: 4px;
+}
+
+.toggle-last-txt{
+    position: absolute;
+    color: #ffffff99;
+    font-size: 13px;
+    top: 10px;
+    right: 8px;
+}
+
+.toggle-switch{
+    transition: all 0.5s ease;
+    justify-content: center;
+    color: var(--primary);
+    align-items: center;
+    background: white;
+    border-radius: 2px;
+    position: absolute;
+    font-size: 13px;
+    display: flex;
+    height: 33px;
+    width: 57px;
+    top: 3px;
+}

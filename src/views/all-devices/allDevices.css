@@ -1,0 +1,109 @@
+.all-dev-sts::-webkit-scrollbar {
+    width: 3px;
+}
+
+.dev-sts-div {
+    border: 1px solid #dddddd;
+    background: white;
+}
+
+.dev-txt {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.dev-sts-time,
+.schedule-icon {
+    font-size: 11px !important;
+    margin-left: auto;
+    font-weight: 400;
+}
+
+.dev-sts-refresh {
+    border-left: 1px solid #dddddd;
+    padding: 4px 14px;
+    cursor: pointer;
+    height: 38px;
+    float: right;
+}
+
+.all-dev-sts {
+    border: 1px solid #00000020;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.dev-name-outer {
+    background: white;
+    align-items: center;
+    padding: 10px;
+}
+
+.each-dev,
+.each-dev:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dev-name {
+    font-size: 14px !important;
+    color: black;
+}
+
+.dev-name-inner {
+    align-items: center;
+    font-weight: 600;
+}
+
+.dev-name-icon {
+    font-size: 15px !important;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.table {
+    border-bottom: 1px solid #eeeeee;
+    border-top: 1px solid #eeeeee;
+    margin-bottom: 0px !important;
+    color: #363636 !important;
+    background: #fafafa;
+}
+
+.table-cell {
+    padding: 8px 8px 0px 8px !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    border: 0 !important;
+}
+
+.table-value {
+    padding-bottom: 8px !important;
+    padding-top: 0px !important;
+    font-size: 11px !important;
+}
+
+.table-icon {
+    font-size: 14px !important;
+}
+
+.each-dev.active .dev-name-outer {
+    background: #0093a5;
+}
+
+.each-dev.active .dev-name-outer * {
+    color: white;
+}
+
+.each-dev.active .table {
+    border: 1px solid #0093a5;
+    border-width: 0 1px 1px 1px;
+}
+
+@media (min-width: 1285px) {
+    .dev-name-inner {
+        display: flex;
+    }
+}

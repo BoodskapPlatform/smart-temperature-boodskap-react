@@ -1,0 +1,22 @@
+.data-table {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.data-table-search {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.data-table-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+/* .data-table-body {
+  display: flex;
+  flex: 1;flex-direction: column;
+} */

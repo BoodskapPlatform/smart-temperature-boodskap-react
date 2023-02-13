@@ -1,0 +1,16 @@
+.popup-action-item {
+  cursor: pointer;
+  display: flex;
+  font-family: medium;
+  flex-direction: row;
+  align-items: center;
+  color: var(--text-primary);
+  font-size: 14px !important;
+  padding: 6px 12px;
+}
+
+.popup-action-item:hover {
+  background-color: var(--gray);
+}
+
+

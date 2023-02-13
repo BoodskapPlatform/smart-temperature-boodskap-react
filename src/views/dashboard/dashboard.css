@@ -1,0 +1,74 @@
+.main-container {
+    padding: 13px;
+}
+
+.refresh-btn {
+    font-family: 'Montserrat' !important;
+    background: var(--primary) !important;
+    text-transform: none !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    width: 78px;
+}
+
+.refresh-icon {
+    font-size: 18px !important;
+    margin-right: 3px;
+}
+
+.scroll-content {
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.inner-header {
+    border-bottom: 1px solid #ddd;
+    font-weight: 900 !important;
+    padding-bottom: 13px;
+    color: black;
+}
+
+.heading-outer {
+    border-bottom: 1px solid #dddddd;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 12px 10px;
+}
+
+.heading {
+    font-size: 24px;
+    color: black;
+}
+
+.device-heading {
+    font-weight: 600;
+}
+
+.no-data {
+    height: calc(100vh - 58px);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.no-data-head {
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.no-data-inner {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+@media (max-width:500px) {
+    .heading {
+        font-size: 15px;
+    }
+    .card-outer{
+        width: 100%;
+    }
+}

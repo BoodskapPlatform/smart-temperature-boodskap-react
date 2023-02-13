@@ -1,0 +1,10 @@
+.loader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.loader p{
+    margin-left: 6px;
+  }

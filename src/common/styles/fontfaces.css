@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "bold";   
+  src: local("OpenSans-Bold.ttf"),
+    url("./../../assets/fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "light";   
+  src: local("OpenSans-Light.ttf"),
+    url("./../../assets/fonts/OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "medium";   
+  src: local("OpenSans-Medium"),
+    url("./../../assets/fonts/OpenSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "regular";   
+  src: local("OpenSans-Regular.ttf"),
+    url("./../../assets/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "semi-bold";   
+  src: local("OpenSans-SemiBold.ttf"),
+    url("./../../assets/fonts/OpenSans-SemiBold.ttf") format("truetype");
+}

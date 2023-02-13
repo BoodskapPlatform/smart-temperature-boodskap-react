@@ -1,0 +1,27 @@
+.current-statistics-value{
+    font-weight: 600 !important;
+    font-size: 34px !important;
+    color: var(--primary);
+    align-items: center;
+    display: flex;
+}
+
+.unit{
+    margin-left: 3px;
+    font-size: 16px;
+    bottom: -6px;
+}
+
+.statistics-img{
+    position: relative;
+    height: 260px;
+}
+
+.temp-size{
+    background: #f41e33;
+    position: absolute;
+    height: 130px;
+    bottom: 36px;
+    width: 12px;
+    left: 36px;
+}

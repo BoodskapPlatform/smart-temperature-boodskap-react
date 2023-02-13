@@ -1,0 +1,11 @@
+.powered-by p{
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  
+  .powered-by{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
