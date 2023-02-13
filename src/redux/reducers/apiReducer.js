@@ -50,7 +50,7 @@ const initialState = {
 }
 
 export const getDeviceListAPI = createAsyncThunk('apiReducer/getDeviceListAPI', async (_, thunkAPI) => {
-    const response = await callApi(`${devConfig.slugName}/list`, { "domain_key": devConfig.domainKey }, "post", microApi)
+    const response = await callApi(`/list`, { "domain_key": devConfig.domainKey }, "post", microApi)
     if (response.result.success) { // call 1st device details and history API
         thunkAPI.dispatch(getDeviceDetailsAPI(response.result.values[0]["devid"]))
         thunkAPI.dispatch(getDeviceHistoryAPI({
@@ -64,7 +64,7 @@ export const getDeviceListAPI = createAsyncThunk('apiReducer/getDeviceListAPI', 
 
 export const getDeviceDetailsAPI = createAsyncThunk('apiReducer/getDeviceDetailsAPI', async (deviceId, thunkAPI) => {
     const gmt = thunkAPI.getState().apiReducer.browserGMT
-    const response = await callApi(`${devConfig.slugName}/status`, { "devid": deviceId, tz: gmt }, "post", microApi)
+    const response = await callApi(`/status`, { "devid": deviceId, tz: gmt }, "post", microApi)
     return response;
 })
 
@@ -84,7 +84,7 @@ export const getDeviceHistoryAPI = createAsyncThunk('apiReducer/getDeviceHistory
         bodyParams["tdate"] = moment().format("YYYY-MM-DD")
     }
 
-    const response = await callApi(`${devConfig.slugName}/between`, bodyParams, "post", microApi)
+    const response = await callApi(`/between`, bodyParams, "post", microApi)
     let output = {
         chartType,
         result: response

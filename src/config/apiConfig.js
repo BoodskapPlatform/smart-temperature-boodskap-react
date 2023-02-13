@@ -2,6 +2,8 @@ import axios from "axios";
 import Prefs from "../common/utilities/prefs";
 import { devConfig } from "./config";
 
+const domainKey = devConfig.domainKey.toLowerCase()
+
 const platformApiInstance = axios.create({
     baseURL: devConfig.platformUrl,
     headers:{
@@ -19,7 +21,7 @@ platformApiInstance.interceptors.request.use(function (config) {
 });
 
 const microApiInstance = axios.create({
-    baseURL: devConfig.microApiUrl,
+    baseURL: devConfig.platformUrl+'micro/service/call/post/'+domainKey+'/'+devConfig.slugName,
     headers:{
         'Content-Type': 'application/json',
     }
